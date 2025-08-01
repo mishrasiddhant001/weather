@@ -1,0 +1,131 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Weather App Design System - Modern gradients and weather-themed colors */
+
+@layer base {
+  :root {
+    --background: 210 50% 98%;
+    --foreground: 210 15% 15%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 210 15% 15%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 210 15% 15%;
+
+    --primary: 210 100% 50%;
+    --primary-foreground: 0 0% 100%;
+
+    --secondary: 210 30% 94%;
+    --secondary-foreground: 210 15% 25%;
+
+    --muted: 210 30% 96%;
+    --muted-foreground: 210 15% 45%;
+
+    --accent: 45 100% 55%;
+    --accent-foreground: 210 15% 15%;
+
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 210 30% 90%;
+    --input: 210 30% 94%;
+    --ring: 210 100% 50%;
+
+    --radius: 1rem;
+
+    /* Weather App Specific Colors */
+    --weather-blue: 210 100% 50%;
+    --weather-blue-light: 210 100% 70%;
+    --weather-orange: 25 100% 60%;
+    --weather-purple: 260 80% 65%;
+    --weather-green: 145 70% 50%;
+    --weather-gray: 210 15% 40%;
+
+    /* Gradients */
+    --gradient-day: linear-gradient(135deg, hsl(210 100% 70%), hsl(210 100% 50%));
+    --gradient-night: linear-gradient(135deg, hsl(260 80% 30%), hsl(260 80% 65%));
+    --gradient-sunset: linear-gradient(135deg, hsl(25 100% 60%), hsl(45 100% 55%));
+    --gradient-card: linear-gradient(135deg, rgba(255,255,255,0.25), rgba(255,255,255,0.1));
+
+    /* Shadows */
+    --shadow-weather: 0 20px 60px -20px hsl(210 100% 50% / 0.3);
+    --shadow-card: 0 10px 30px -10px hsl(210 15% 15% / 0.1);
+
+    /* Animations */
+    --transition-smooth: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    --transition-bounce: all 0.6s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+
+    --sidebar-background: 0 0% 98%;
+
+    --sidebar-foreground: 240 5.3% 26.1%;
+
+    --sidebar-primary: 240 5.9% 10%;
+
+    --sidebar-primary-foreground: 0 0% 98%;
+
+    --sidebar-accent: 240 4.8% 95.9%;
+
+    --sidebar-accent-foreground: 240 5.9% 10%;
+
+    --sidebar-border: 220 13% 91%;
+
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+
+  .dark {
+    --background: 210 30% 8%;
+    --foreground: 210 30% 95%;
+
+    --card: 210 30% 12%;
+    --card-foreground: 210 30% 95%;
+
+    --popover: 210 30% 12%;
+    --popover-foreground: 210 30% 95%;
+
+    --primary: 210 100% 60%;
+    --primary-foreground: 210 30% 8%;
+
+    --secondary: 210 30% 15%;
+    --secondary-foreground: 210 30% 90%;
+
+    --muted: 210 30% 15%;
+    --muted-foreground: 210 15% 65%;
+
+    --accent: 45 100% 65%;
+    --accent-foreground: 210 30% 8%;
+
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 210 30% 95%;
+
+    --border: 210 30% 18%;
+    --input: 210 30% 15%;
+    --ring: 210 100% 60%;
+
+    /* Dark mode gradients */
+    --gradient-day: linear-gradient(135deg, hsl(210 100% 40%), hsl(210 100% 60%));
+    --gradient-night: linear-gradient(135deg, hsl(260 80% 20%), hsl(260 80% 40%));
+    --gradient-sunset: linear-gradient(135deg, hsl(25 100% 40%), hsl(45 100% 50%));
+    --gradient-card: linear-gradient(135deg, rgba(255,255,255,0.1), rgba(255,255,255,0.05));
+    --sidebar-background: 240 5.9% 10%;
+    --sidebar-foreground: 240 4.8% 95.9%;
+    --sidebar-primary: 224.3 76.3% 48%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 240 3.7% 15.9%;
+    --sidebar-accent-foreground: 240 4.8% 95.9%;
+    --sidebar-border: 240 3.7% 15.9%;
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+  }
+}
